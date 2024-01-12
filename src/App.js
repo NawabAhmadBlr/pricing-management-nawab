@@ -7,6 +7,7 @@ function App() {
 
   const handleUpload = async (uploadedRecords) => {
     try {
+      
       const response = await fetch('/api/pricing/upload', {
         method: 'POST',
         headers: {
